@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+	<LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical" >
+    	<ImageView 
+    	    android:id="@+id/chainruleimagetwo"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginLeft="10dp"
+    	    android:layout_marginRight="10dp"
+    	    android:drawable="@drawable/image_chainruletwo"
+    	    android:contentDescription="@string/content_desc_imageChainRule"
+    	    android:src="@drawable/image_chainruletwo"/>
+    	<TextView
+        	android:id="@+id/chainrule"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:layout_marginLeft="10dp"
+        	android:layout_marginRight="10dp"
+        	android:text="@string/content_chainrule"
+        	android:textSize="18sp" />
+	</LinearLayout>
+</ScrollView>

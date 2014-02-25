@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Survive College: Calculus</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="content_desc_listImage">listImage</string>
+    <string name="content_about1">I\'m a paid tutor and independent developer attending the University of Missouri pursuing a dual degree in electrical and computer engineering.</string>
+    <string name="content_about2">If you have suggestions for future updates please send them to dhansonmu@gmail.com.</string>
+    <string name="content_domains">The domain of a function is the set of numbers where the function is defined. E.g. y=1/x ; Domain: x belongs to (-infinity,0) U (0,infinity)</string>
+    <string name="content_productrule">The product rule formula is used when you are trying to find the derivative of two functions that are being multiplied.</string>
+    <string name="content_quotientrule">The quotient rule formula is used when you are trying to find the derivative of two functions that are being divided.</string>
+    <string name="content_infinitelimits">The fraction infinity over infinity is indeterminate, so infinite limits need to be evaluated to keep the answer from being indeterminate. E.g. Divide by the highest power of "x"</string>
+    <string name="content_limitdefinitiontwo">The limit definition is used to find the point that x approaches at the number n.</string>
+    <string name="content_derivativedefinition">The definition of the derivative is the actual formula used to calculate derivatives, though there are many quicker ways of calculating derivatives.</string>
+    <string name="content_powerrule">The power rule is a simple formula to make the process of calculating derivatives much easier.</string>
+    <string name="content_chainrule">The chain rule is another formula to simplify the calculation of derivatives.</string>
+    <string name="content_integraldefinition">The formal integral definition formula uses a Riemann sum, which uses an infinite amount of rectangles to find the area under a curve.</string>
+    <string name="content_definiteintegral">The definite integral formula can be used instead of the Riemann sum formula.</string>
+    <string name="content_indefiniteintegral">The indefinite integral formula is used to find </string>
+    <string name="content_desc_imageColumns">imageColumns</string>
+	<string name="content_desc_imageDomains">imageDomains</string>
+	<string name="content_desc_imageProductRule">imageProductRule</string>
+	<string name="content_desc_imageQuotientRule">imageQuotientRule</string>
+	<string name="content_desc_imageLimitDefinition">imageLimitDefinition</string>
+	<string name="content_desc_imageLimitLaws">imageLimitLaws</string>
+	<string name="content_desc_imageInfiniteLimits">imageInfiniteLimits</string>
+    <string name="content_desc_imageDerivativeDefinition">imageDerivativeDefinition</string>
+    <string name="content_desc_imageDerivativeLaws">imageDerivativeLaws</string>
+    <string name="content_desc_imagePowerRule">imagePowerRule</string>
+    <string name="content_desc_imageChainRule">imageChainRule</string>
+    <string name="content_desc_imageIntegralDefinition">imageIntegralDefinition</string>
+    <string name="content_desc_imageIntegralTrig">imageIntegralTrig</string>
+    <string name="content_desc_imageDefiniteIntegral">imageDefiniteIntegral</string>
+    <string name="content_desc_imageIndefiniteIntegral">imageIndefiniteIntegral</string>
+    <string name="content_desc_imageSubstitutionRule">imageSubstitutionRule</string>
+	
+</resources>
