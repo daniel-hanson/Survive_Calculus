@@ -26,31 +26,31 @@ public class Integrals extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_integrals);
         MainCustomList adapter = new
-                MainCustomList(Integrals.this, web, imageId);
+        MainCustomList(Integrals.this, web, imageId);
         list=(ListView)findViewById(R.id.listview);
-                list.setAdapter(adapter);
-                list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    	switch(position){
-                    	case 0:
-                    		Intent newIntegralDefinitionActivity = new Intent(Integrals.this, IntegralDefinition.class);
-                    		startActivity(newIntegralDefinitionActivity);
-                    	break;
-                    	case 1:
-                    		Intent newIntegralTrigActivity = new Intent(Integrals.this, IntegralTrig.class);
-                    		startActivity(newIntegralTrigActivity);
-                    	break;
-                    	case 2:
-                    		Intent newDefiniteIntegralsActivity = new Intent(Integrals.this, DefiniteIntegrals.class);
-                    		startActivity(newDefiniteIntegralsActivity);
-                    	break;
-                    	case 3:
-                    		Intent newSubstitutionActivity = new Intent(Integrals.this, Substitution.class);
-                    		startActivity(newSubstitutionActivity);
-                    	break;
-                    	}
-                    }
-                });
+        list.setAdapter(adapter);
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        	@Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        		switch(position){
+                	case 0:
+                    	Intent newIntegralDefinitionActivity = new Intent(Integrals.this, IntegralDefinition.class);
+                    	startActivity(newIntegralDefinitionActivity);
+                    break;
+                   	case 1:
+                    	Intent newIntegralTrigActivity = new Intent(Integrals.this, IntegralTrig.class);
+                    	startActivity(newIntegralTrigActivity);
+                    break;
+                    case 2:
+                    	Intent newDefiniteIntegralsActivity = new Intent(Integrals.this, DefiniteIntegrals.class);
+                    	startActivity(newDefiniteIntegralsActivity);
+                    break;
+                    case 3:
+                    	Intent newSubstitutionActivity = new Intent(Integrals.this, Substitution.class);
+                    	startActivity(newSubstitutionActivity);
+                    break;
+        		}
+        	}
+        });
     }
 }

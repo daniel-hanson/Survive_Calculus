@@ -24,27 +24,27 @@ public class Introduction extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_introduction);
         MainCustomList adapter = new
-                MainCustomList(Introduction.this, web, imageId);
+        MainCustomList(Introduction.this, web, imageId);
         list=(ListView)findViewById(R.id.listview);
-                list.setAdapter(adapter);
-                list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    	switch(position){
-                    	case 0:
-                    		Intent newDomainsActivity = new Intent(Introduction.this, Domains.class);
-                    		startActivity(newDomainsActivity);
-                    	break;
-                    	case 1:
-                    		Intent newProductRuleActivity = new Intent(Introduction.this, ProductRule.class);
-                    		startActivity(newProductRuleActivity);
-                    	break;
-                    	case 2:
-                    		Intent newQuotientRuleActivity = new Intent(Introduction.this, QuotientRule.class);
-                    		startActivity(newQuotientRuleActivity);
-                    	break;
-                    	}
-                    }
-                });
+        list.setAdapter(adapter);
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        	@Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        		switch(position){
+                	case 0:
+                    	Intent newDomainsActivity = new Intent(Introduction.this, Domains.class);
+                    	startActivity(newDomainsActivity);
+                    break;
+                    case 1:
+                   		Intent newProductRuleActivity = new Intent(Introduction.this, ProductRule.class);
+                    	startActivity(newProductRuleActivity);
+                    break;
+                    case 2:
+                    	Intent newQuotientRuleActivity = new Intent(Introduction.this, QuotientRule.class);
+                    	startActivity(newQuotientRuleActivity);
+                    break;
+        		}
+        	}
+        });
     }
 }

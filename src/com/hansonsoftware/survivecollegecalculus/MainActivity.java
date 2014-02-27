@@ -54,8 +54,8 @@ public class MainActivity extends Activity {
                     	Intent newAboutActivity = new Intent(MainActivity.this, About.class);
                     	startActivity(newAboutActivity);
                     break;
-                    }
-              }
+        		}
+        	}
         });
     }
 }

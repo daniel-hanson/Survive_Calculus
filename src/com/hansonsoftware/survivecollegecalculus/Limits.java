@@ -24,27 +24,27 @@ public class Limits extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_limits);
         MainCustomList adapter = new
-                MainCustomList(Limits.this, web, imageId);
+        MainCustomList(Limits.this, web, imageId);
         list=(ListView)findViewById(R.id.listview);
-                list.setAdapter(adapter);
-                list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    	switch(position){
-                    	case 0:
-                    		Intent newLimitDefinitionActivity = new Intent(Limits.this, LimitDefinition.class);
-                    		startActivity(newLimitDefinitionActivity);
-                    	break;
-                    	case 1:
-                    		Intent newLimitLawsActivity = new Intent(Limits.this, LimitLaws.class);
-                    		startActivity(newLimitLawsActivity);
-                    	break;
-                    	case 2:
-                    		Intent newInfinityActivity = new Intent(Limits.this, Infinity.class);
-                    		startActivity(newInfinityActivity);
-                    	break;
-                    	}
-                    }
-                });
+        list.setAdapter(adapter);
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        	@Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch(position){
+                    case 0:
+                    	Intent newLimitDefinitionActivity = new Intent(Limits.this, LimitDefinition.class);
+                    	startActivity(newLimitDefinitionActivity);
+                    break;
+                    case 1:
+                    	Intent newLimitLawsActivity = new Intent(Limits.this, LimitLaws.class);
+                    	startActivity(newLimitLawsActivity);
+                    break;
+                    case 2:
+                    	Intent newInfinityActivity = new Intent(Limits.this, Infinity.class);
+                    	startActivity(newInfinityActivity);
+                    break;
+                }
+        	}
+        });
     }
 }

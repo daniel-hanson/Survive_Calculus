@@ -26,31 +26,31 @@ public class Derivatives extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_derivatives);
         MainCustomList adapter = new
-                MainCustomList(Derivatives.this, web, imageId);
+        MainCustomList(Derivatives.this, web, imageId);
         list=(ListView)findViewById(R.id.listview);
-                list.setAdapter(adapter);
-                list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    	switch(position){
-                    	case 0:
-                    		Intent newDerivativeDefinitionActivity = new Intent(Derivatives.this, DerivativeDefinition.class);
-                    		startActivity(newDerivativeDefinitionActivity);
-                    	break;
-                    	case 1:
-                    		Intent newPowerRuleActivity = new Intent(Derivatives.this, PowerRule.class);
-                    		startActivity(newPowerRuleActivity);
-                    	break;
-                    	case 2:
-                    		Intent newDerivativeTrigActivity = new Intent(Derivatives.this, DerivativeTrig.class);
-                    		startActivity(newDerivativeTrigActivity);
-                    	break;
-                    	case 3:
-                    		Intent newChainRuleActivity = new Intent(Derivatives.this, ChainRule.class);
-                    		startActivity(newChainRuleActivity);
-                    	break;
-                    	}
-                    }
-                });
+        list.setAdapter(adapter);
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        	@Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        		switch(position){
+                	case 0:
+                    	Intent newDerivativeDefinitionActivity = new Intent(Derivatives.this, DerivativeDefinition.class);
+                    	startActivity(newDerivativeDefinitionActivity);
+                    break;
+                    case 1:
+                    	Intent newPowerRuleActivity = new Intent(Derivatives.this, PowerRule.class);
+                    	startActivity(newPowerRuleActivity);
+                    break;
+                    case 2:
+                    	Intent newDerivativeTrigActivity = new Intent(Derivatives.this, DerivativeTrig.class);
+                    	startActivity(newDerivativeTrigActivity);
+                    break;
+                    case 3:
+                    	Intent newChainRuleActivity = new Intent(Derivatives.this, ChainRule.class);
+                    	startActivity(newChainRuleActivity);
+                    break;
+        		}
+        	}
+        });
     }
 }
